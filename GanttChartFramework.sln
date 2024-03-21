@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GanttChartFramework", "GanttChartFramework\GanttChartFramework.csproj", "{B96F0CCC-8E31-4FE9-A24E-E0058B547494}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B96F0CCC-8E31-4FE9-A24E-E0058B547494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B96F0CCC-8E31-4FE9-A24E-E0058B547494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B96F0CCC-8E31-4FE9-A24E-E0058B547494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B96F0CCC-8E31-4FE9-A24E-E0058B547494}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02ECC87E-63BD-4C4E-8344-58B9FC5981D2}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GanttChartFramework.ControlCenter">
+    <Position X="10.5" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAEAABIAAQIgAAAAAQggAIAAAAAAAAAKAAAKE=</HashCode>
+      <FileName>ControlCenter.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GanttChartFramework.MainWindow">
+    <Position X="7.25" Y="1.75" Width="3" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="GanttChartFramework.MainWindow.MyData">
+        <TypeIdentifier>
+          <NewMemberFileName>MainWindow.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>kAAgAAAAIQACIAAQAACAAEAAAEAAABVBEQQIQIACACA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

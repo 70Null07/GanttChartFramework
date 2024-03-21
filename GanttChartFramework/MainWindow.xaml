@@ -1,0 +1,29 @@
+﻿<Window x:Class="GanttChartFramework.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GanttChartFramework"
+        mc:Ignorable="d"
+        Title="Оперативное планирование" Height="300" Width="800">
+    <Grid>
+        <Button x:Name="GenerateValues" Content="Сгенерировать случайные исходные данные" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top" Width="276" Click="GenerateValues_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="10,25,0,0" TextWrapping="Wrap" Text="{Binding RndMachines}" VerticalAlignment="Top" Width="134"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="10,60,0,0" TextWrapping="Wrap" Text="{Binding rndDetails}" VerticalAlignment="Top" Width="134"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="157,25,0,0" TextWrapping="Wrap" Text="Минимальное время" VerticalAlignment="Top" Width="129"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Margin="157,60,0,0" TextWrapping="Wrap" Text="Максимальное время" VerticalAlignment="Top" Width="129"/>
+        <Label x:Name="label" Content="Обобщения алгоритма Джонсона" HorizontalAlignment="Left" Margin="44,118,0,0" VerticalAlignment="Top" Width="208" Height="24"/>
+        <Label x:Name="label1" Content="Обобщения метода Петрова-Синицина" HorizontalAlignment="Left" Margin="312,118,0,0" VerticalAlignment="Top" Height="24"/>
+        <ComboBox x:Name="JohnsonGeneralizationsComboBox" SelectedIndex="{Binding SelectedJohnson}" ItemsSource="{Binding JohnsonGeneralizations}" HorizontalAlignment="Left" Margin="52,147,0,0" VerticalAlignment="Top" Width="192"/>
+        <ComboBox x:Name="PeterSinitsynGeneralizationsComboBox" SelectedIndex="{Binding SelectedPeter}" ItemsSource="{Binding PeterSinitsynGeneralizations}" HorizontalAlignment="Left" Margin="330,147,0,0" VerticalAlignment="Top" Width="192"/>
+        <Button x:Name="LoadValues" Content="Зарузить значения" HorizontalAlignment="Center" Margin="0,23,0,0" VerticalAlignment="Top" Width="176" Height="20" Click="LoadValues_Click"/>
+        <Button x:Name="CalculateJohnson" Content="Рассчитать" HorizontalAlignment="Left" Margin="52,197,0,0" VerticalAlignment="Top" Width="192" Click="CalculateJohnson_Click"/>
+        <Button x:Name="CalculatePeterSinitsyn" Content="Рассчитать" HorizontalAlignment="Left" Margin="330,197,0,0" VerticalAlignment="Top" Width="192" Click="CalculatePeterSinitsyn_Click"/>
+        <Button x:Name="ExportValues" Content="Экспортировать значения" HorizontalAlignment="Center" Margin="0,60,0,0" VerticalAlignment="Top" Width="176" Click="ExportValues_Click"/>
+        <ComboBox x:Name="ResultsOrdersComboBox" SelectedIndex="{Binding SelectedResult}" ItemsSource="{Binding ResultsOrders}" HorizontalAlignment="Left" Margin="575,147,0,0" VerticalAlignment="Top" Width="187" Height="22"/>
+        <Label x:Name="label2" Content="Перечень результатов" HorizontalAlignment="Left" Margin="579,118,0,0" HorizontalContentAlignment="Center" VerticalAlignment="Top" Width="187" Height="24"/>
+        <Button x:Name="ShowResultButton" Content="Отобразить" HorizontalAlignment="Left" Margin="575,197,0,0" VerticalAlignment="Top" Width="187" Click="ShowResultButton_Click"/>
+        <Button x:Name="LoadResultButton" Content="Загрузить результат" HorizontalAlignment="Left" Margin="575,93,0,0" VerticalAlignment="Top" Width="187" Click="LoadResultButton_Click"/>
+
+    </Grid>
+</Window>
